@@ -7,7 +7,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.ts --bundle --platform=node --target=node22 --outfile=out.js"
+    "build": "esbuild index.ts --bundle --platform=node --format=esm --target=node22 --outfile=out.js"
   },
   "dependencies": {
     "bcrypt": "5.1.1"
