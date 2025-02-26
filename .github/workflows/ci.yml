@@ -14,5 +14,7 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Bundle bcryptjs (succeeds)
+        run: npm run build-bcryptjs
       - name: Bundle bcrypt (fails)
         run: npm run build
